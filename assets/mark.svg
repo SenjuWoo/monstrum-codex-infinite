@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Monstrum Codex Infinite mark">
+  <rect width="64" height="64" rx="14" fill="#ff4d7a"/>
+  <path fill="#0b0e08" d="M16 8l8 13H16zM48 8l-8 13h8z"/>
+  <path fill="#0b0e08" d="M11 21c7 3.2 13.5 3.2 21 0v33c-8 4.2-14 4.2-21 0V21zm42 0c-7 3.2-13.5 3.2-21 0v33c8 4.2 14 4.2 21 0V21z"/>
+  <path fill="#ff4d7a" d="M42.5 35.2c0-3.4-2.5-5.4-4.7-5.4-1.7 0-3 .9-3.8 2.4-.8-1.5-2.1-2.4-3.8-2.4-2.2 0-4.7 2-4.7 5.4 0 6 8.5 10.6 8.5 10.6s8.5-4.6 8.5-10.6z"/>
+</svg>
