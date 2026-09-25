@@ -5,4 +5,4 @@ pillow>=12.3.0,<13
 python-multipart>=0.0.32,<1
 pywebview>=6.2.1,<7
 curl-cffi>=0.16.2,<1
-playwright>=1.62.0,<2
+playwright>=1.63.0,<2
