@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/ShugokiFable/monstrum-codex-infinite/actions/workflows/ci.yml"><img src="https://github.com/ShugokiFable/monstrum-codex-infinite/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <a href="https://github.com/SenjuWoo/monstrum-codex-infinite/actions/workflows/ci.yml"><img src="https://github.com/SenjuWoo/monstrum-codex-infinite/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-ff4d7a?labelColor=0d0f11" alt="MIT License"></a>
   <a href="DATA-LICENSE.md"><img src="https://img.shields.io/badge/data-CC0%20originals-8f9aa6?labelColor=0d0f11" alt="CC0 original data"></a>
   <img src="https://img.shields.io/badge/app-v1.6.1-8f9aa6?labelColor=0d0f11" alt="v1.6.1">
