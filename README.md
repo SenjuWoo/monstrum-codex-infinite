@@ -1,70 +1,58 @@
-<p align="center">
-  <img src="assets/mark.svg" width="72" height="72" alt="Monstrum Codex Infinite mark">
-</p>
+<div align="center">
 
-<h1 align="center">Monstrum Codex Infinite</h1>
+![Monstrum Codex Infinite: the pink horned-book mark with a heart on a dark violet glow, with the tagline 'A local monster-girl encyclopedia that forges as well as it files. Browse, tag, illustrate and export every specimen.'](docs/presentation/hero.png)
 
-<p align="center"><strong>A local monster-girl encyclopedia that forges as well as it files.</strong></p>
+[![CI](https://github.com/SenjuWoo/monstrum-codex-infinite/actions/workflows/ci.yml/badge.svg)](https://github.com/SenjuWoo/monstrum-codex-infinite/actions/workflows/ci.yml)
+[![App v1.6.1](https://img.shields.io/badge/app-v1.6.1-ff4fd8?labelColor=0d0f11)](CHANGELOG.md)
+[![Python 3.12](https://img.shields.io/badge/python-3.12-58d6ef?labelColor=0d0f11)](requirements.txt)
+[![Data: CC0 originals](https://img.shields.io/badge/data-CC0%20originals-8f9aa6?labelColor=0d0f11)](DATA-LICENSE.md)
+[![License: MIT](https://img.shields.io/badge/license-MIT-ff4d7a?labelColor=0d0f11)](LICENSE)
 
-<p align="center">
-  Adult fictional bestiary and AI creation studio: succubi, lamia, alraune,<br>
-  and every other specimen the archive will hold — browsed, tagged, illustrated, exported.
-</p>
+**[Run it](#run)** · **[Tour](#a-two-minute-tour)** · **[Libraries](#libraries)** · **[Official cache](#official-media-cache)** · **[AI portraits](#generate-missing-ai--user-portraits)** · **[How it works](#how-it-works)** · **[Changelog](CHANGELOG.md)**
 
-<p align="center">
-  <a href="https://github.com/SenjuWoo/monstrum-codex-infinite/actions/workflows/ci.yml"><img src="https://github.com/SenjuWoo/monstrum-codex-infinite/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-ff4d7a?labelColor=0d0f11" alt="MIT License"></a>
-  <a href="DATA-LICENSE.md"><img src="https://img.shields.io/badge/data-CC0%20originals-8f9aa6?labelColor=0d0f11" alt="CC0 original data"></a>
-  <img src="https://img.shields.io/badge/app-v1.6.1-8f9aa6?labelColor=0d0f11" alt="v1.6.1">
-  <img src="https://img.shields.io/badge/python-3.12-8f9aa6?labelColor=0d0f11" alt="Python 3.12">
-</p>
+</div>
 
-<p align="center">
-  <a href="#run">Run</a>
-  ·
-  <a href="#libraries">Libraries</a>
-  ·
-  <a href="#official-media-cache">Official cache</a>
-  ·
-  <a href="#honest-status">Status</a>
-  ·
-  <a href="CHANGELOG.md">Changelog</a>
-</p>
-
-This git tree is **source only**. `userdata/` (SQLite, API keys, cached portraits, generated art, browser profile) is gitignored. Original bundled prose in `data/seed_codex.json` is **CC0 1.0**. The Official Archive is a **source-link index**, not a dump of Monster Girl Encyclopedia page text or image binaries.
-
-## Why it exists
-
-A monster-girl encyclopedia is useless as a folder of unmarked JPEGs. You want dense browsing, source-aware records, anatomy / ecology / culture / abilities / weaknesses / roleplay fields on one card, and an AI studio that can forge a new succubus without pretending she is "official."
+Monstrum Codex Infinite is an adult fictional bestiary and AI creation studio:
+succubi, lamia, alraune and every other specimen the archive will hold, browsed,
+tagged, illustrated and exported from one local app. A monster-girl encyclopedia
+is useless as a folder of unmarked JPEGs. You want dense browsing, source-aware
+records, anatomy / ecology / culture / abilities / weaknesses / roleplay fields on
+one card, and an AI studio that can forge a new succubus without pretending she is
+"official."
 
 Inspired by the *workflow* of Bionus Grabber (dense browse, local cache, fast inspect). Not a fork. No Grabber code.
 
-Adults only. Fictional specimens. No child or age-ambiguous entries.
+**Adults only. Fictional specimens. No child or age-ambiguous entries.**
+
+This git tree is **source only**. `userdata/` (SQLite, API keys, cached portraits, generated art, browser profile) is gitignored. Original bundled prose in `data/seed_codex.json` is **CC0 1.0**. The Official Archive is a **source-link index**, not a dump of Monster Girl Encyclopedia page text or image binaries.
 
 ## What you get
 
-- Three libraries that cannot impersonate each other: **Official Archive**, **AI Forged**, **User Creations**
-- Naturalist profile on every entry (diet, cycle, social, disposition, danger response, likes / dislikes, terrain)
-- Living habitat scenes (local canvas: embers, snow, fireflies, dust — no GIFs, no network)
-- Danger-reactive particles, holographic foil on Rare / Mythic / Legendary, card tilt, hero parallax
-- Full-screen "other page" dossier with a living-environment stage
-- Fast search, family / habitat / rarity / danger / favorites / recency
-- Editor covering anatomy, ecology, culture, abilities, weaknesses, image prompts, provenance, roleplay
-- OpenRouter lore forge; OpenAI / Gemini image APIs; ComfyUI; ChatGPT / Gemini subscription handoff
-- SillyTavern exports: CCv3 JSON, CCv3 PNG, CHARX, lorebook JSON
-- Real-browser Official image + article-text cache (Cloudflare-facing wiki; no HTTP impersonation)
-- Windows desktop shell (Edge WebView2) with browser fallback
-- 30 unittest methods in `tests/test_smoke.py`
+- **Three libraries that cannot impersonate each other:** Official Archive, AI Forged and User Creations. A generated succubus cannot silently wear an Official badge.
+- **A naturalist profile on every entry:** diet, cycle, social structure, disposition, danger response, likes / dislikes and terrain.
+- **A living codex:** habitat scenes drawn on a local canvas (embers, snow, fireflies, dust; no GIFs, no network), danger-reactive particles, holographic foil on Rare / Mythic / Legendary, card tilt and hero parallax.
+- **The other page:** a full-screen dossier with a living-environment stage, next to the side panel that keeps you in the grid.
+- **Fast search and filters:** family, habitat, rarity, danger, favorites and recency.
+- **An editor for everything:** anatomy, ecology, culture, abilities, weaknesses, image prompts, provenance and roleplay.
+- **AI forge and art:** OpenRouter lore forge; OpenAI / Gemini image APIs; ComfyUI; ChatGPT / Gemini subscription handoff.
+- **SillyTavern exports:** CCv3 JSON, CCv3 PNG, CHARX and lorebook JSON.
+- **A real-browser Official cache** for images and article text (Cloudflare-facing wiki; no HTTP impersonation).
+- **A Windows desktop shell** (Edge WebView2) with a browser fallback, and 30 unittest methods in `tests/test_smoke.py`.
 
-## Libraries
+![The Official Archive view of a fresh install: 496 entries in the library, 237 Official, 259 AI Forged, 0 User Creations, and a grid of Official Monster Girl Encyclopedia profile cards from Abaddon to Ant Arachne with monogram placeholders because no wiki media has been cached yet](docs/presentation/app-official.png)
 
-| Library | In this tree | Images |
-| --- | --- | --- |
-| **Official Archive** | 237 indexed Monster Girl Encyclopedia profiles (`data/official_catalog.json`) | Cached on your machine from the canonical wiki. Not in git. |
-| **AI Forged** | 259 bundled original / public-domain archetypes (`data/seed_codex.json`, CC0) plus anything you generate | No wiki mugshot. Generate portraits or attach files. Aello, Ahuizotl Maiden, and the purple-badged Akaname are **AI Forged**, not Official. |
-| **User Creations** | Empty until you write / import | Local art or the same generation batch |
+<table>
+<tr>
+<td width="50%"><img src="docs/presentation/app-ai-forged.png" alt="The AI-Forged Bestiary view: 259 built-in original archetypes such as Aello, Ahuizotl Maiden, Akaname, Alien Hive Queen and Alkonost, with AI Forged and rarity badges, family and habitat lines and danger pips"></td>
+<td width="50%"><img src="docs/presentation/app-detail.png" alt="The detail panel for Aello, № 007, AI Forged, Uncommon, danger 3 of 5: an adult avian species of cyclone corridors, with section tabs, the Show more info button and library, family, origin, habitat and source fields"></td>
+</tr>
+<tr>
+<td width="50%"><img src="docs/presentation/app-dossier.png" alt="The full-screen dossier for Aello: the Living Environment stage with beloved and avoided terrain, the Naturalist Profile with diet, behavior, likes, dislikes and terrain, and the start of Field Lore"></td>
+<td width="50%"><img src="docs/presentation/app-forge.png" alt="The AI creation studio dialog, Forge a New Species: core concept, tone, OpenRouter model, world continuity, a Mature setting themes toggle and the Generate Codex Draft button, with the draft preview pane on the right"></td>
+</tr>
+</table>
 
-The app starts in Official Archive. Combined view is grouped, never interleaved. A generated succubus cannot silently wear an Official badge.
+<p align="center"><sub>Real headless captures of the app running locally on a fresh <code>userdata/</code>: no wiki media cached, no portraits generated, no API keys set.</sub></p>
 
 ## Run
 
@@ -76,7 +64,7 @@ run_windows.bat
 
 Creates `.venv`, installs `requirements.txt`, starts the local server, opens the desktop window. Data goes in `userdata/`.
 
-Browser-only: `run_browser_windows.bat`.
+Browser-only: `run_browser_windows.bat`. Linux: `run_linux.sh`.
 
 Developer:
 
@@ -89,13 +77,28 @@ python -m uvicorn app.main:app --host 127.0.0.1 --port 17373
 
 Then open `http://127.0.0.1:17373`.
 
-Linux: `run_linux.sh`.
-
 Double-launch: `desktop.py` reuses the running instance instead of failing to bind the port.
 
 ### Upgrade from v1.0 / v1.1
 
 Copy the old `userdata/` folder into the new tree (or extract over a copy). First launch migrates `catalog_kind` / `image_url`, parks bundled seed entries in **AI Forged**, keeps identifiable hand-made records in **User Creations**, and adds missing Official index rows without overwriting edits. Back up `userdata/` first.
+
+## A two-minute tour
+
+1. The app opens in **Official Archive**. Switch libraries in the sidebar; **All Entries** groups them, never interleaves them.
+2. Search with `Ctrl+K`, or narrow by family, habitat, rarity and sort order.
+3. Click a card: the side panel opens over the grid. ←/→ browse entries.
+4. **Show more info** opens the full-screen dossier with its Living Environment stage. `Esc` returns to the codex view.
+5. **Forge Entry** drafts a new species through OpenRouter; **New Entry** opens the editor for your own.
+6. From any entry, **Export** to SillyTavern; **Backup** saves the codex.
+
+## Libraries
+
+| Library | In this tree | Images |
+| --- | --- | --- |
+| **Official Archive** | 237 indexed Monster Girl Encyclopedia profiles (`data/official_catalog.json`) | Cached on your machine from the canonical wiki. Not in git. |
+| **AI Forged** | 259 bundled original / public-domain archetypes (`data/seed_codex.json`, CC0) plus anything you generate | No wiki mugshot. Generate portraits or attach files. Aello, Ahuizotl Maiden, and the purple-badged Akaname are **AI Forged**, not Official. |
+| **User Creations** | Empty until you write / import | Local art or the same generation batch |
 
 ## Official media cache
 
@@ -118,7 +121,7 @@ What it does:
 
 Cards: mugshot → portrait → entry image. Detail hero: portrait → mugshot → entry image. Galleries stay separate (mugshot / portraits / entry scans).
 
-Article prose: `cache_official_text_windows.bat` walks each Official source page through the same browser session and stores up to ~4000 characters in `lore`. Challenge-page leakage is what `tests/test_official_lore.py` is for (needs a filled `userdata/`).
+Article prose: `cache_official_text_windows.bat` walks each Official source page through the same browser session and stores up to ~4000 characters in `lore`. Challenge-page leakage is what `tests/test_official_lore.py` is for (a standalone check that needs a filled `userdata/`).
 
 ```text
 set MONSTRUM_BROWSER=C:\Path\To\browser.exe
@@ -188,12 +191,28 @@ JSON:
 
 `catalog_kind` is `official`, `ai`, or `user`. CSV array fields use `|`.
 
-## Local files
+## How it works
+
+```mermaid
+flowchart LR
+  SEED[("data/seed_codex.json · CC0")] --> DB[("userdata/codex.sqlite3")]
+  IDX[("data/official_catalog.json · link index")] --> DB
+  DB --> API["FastAPI on 127.0.0.1"]
+  API --> UI["web/ frontend · WebView2 or browser"]
+  CACHE["real-browser cache (Playwright + your Chromium)"] --> MEDIA[("userdata/media")]
+  PROV["OpenRouter · OpenAI · Gemini · ComfyUI"] --> API
+  MEDIA --> API
+  API --> EXP["CCv3 · CHARX · lorebook"]
+```
+
+- **Local server, local data.** FastAPI and SQLite (WAL) on `127.0.0.1`; a static, dependency-free frontend; an optional pywebview desktop shell. See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
+- **Keys stay on the backend.** Hosted provider calls go through the local server, never from frontend code. Saved keys live in `userdata/codex.sqlite3` and should be treated as secrets.
+- **Hardened local endpoints.** Batch generation maps provider and kind through a constant allowlist and spawns an argv list with `shell=False`; `/media/{filename}` is bound-checked inside `userdata/media`.
 
 ```text
-userdata/codex.sqlite3   Codex + settings (gitignored)
-userdata/media/          Generated, attached, cached portraits (gitignored)
-data/seed_codex.json     CC0 original / public-domain archetypes (in git)
+userdata/codex.sqlite3       Codex + settings (gitignored)
+userdata/media/              Generated, attached, cached portraits (gitignored)
+data/seed_codex.json         CC0 original / public-domain archetypes (in git)
 data/official_catalog.json   Source-link index only (in git)
 ```
 
@@ -207,7 +226,7 @@ build_windows_exe.bat
 
 Output: `dist\Monstrum Codex Infinite\Monstrum Codex Infinite.exe`. That folder is not in git.
 
-## Project map
+### Project map
 
 ```text
 app/            FastAPI, DB, providers, official cache, exports
@@ -217,10 +236,20 @@ tests/          unittest smoke + standalone lore check
 tools/          image / text cache, AI batch
 workflows/      ComfyUI API template
 desktop.py      WebView2 shell
-docs/           architecture, official-archive, reference audit
+docs/           architecture, official-archive, reference audit, presentation images
 CHANGELOG.md    1.6.2 hardening notes and earlier releases
 DATA-LICENSE.md CC0 originals + Official index notice
 ```
+
+## Tested
+
+```powershell
+python -m unittest discover -s tests -p "test_*.py"
+```
+
+CI runs this on Python 3.12 for every push and pull request.
+
+![Terminal: the unittest suite run verbosely; catalog separation, CCv3 exports, entry CRUD, media path-traversal rejection, the seed count and the v1 database migration all pass, Ran 30 tests, OK](docs/presentation/screenshot-tests.png)
 
 ## Honest status
 

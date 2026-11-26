@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased (documentation and dependencies)
+
+- README rebuilt around a cover image, real headless captures of the running app on a fresh `userdata/` (Official Archive, AI Forged, detail panel, dossier, AI creation studio), a real test-run terminal shot, a tour and a how-it-works diagram. No app code changed.
+- `fastapi` requirement floor raised to 0.165.0 (Dependabot #29).
+
 ## 1.6.2 — Command and path injection hardening
 
 - Batch image generation now maps provider/kind arguments through a constant allowlist and launches `python -m tools.generate_ai_images` as an argv list with `shell=False`.
